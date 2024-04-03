@@ -1,0 +1,33 @@
+<html>
+<body>
+      <h1>상품 주문서</h1>
+      <form oninput="result.value=parseInt(num1.value)*5000+parseInt(num2.value)*5500+parseInt(num3.value)*6000">
+          <fieldset>
+          <legend style="color:indigo;">개인 정보</legend>
+          <lable>이름</lable>
+          <input type="text" placeholder="여백없이 입력"><br>
+          <lable>연락처</lable>
+           <input type="number" placeholder="연락가능한 번호">
+          </fieldset>
+          <fieldset>
+           <legend style="color:indigo;">배송지 정보</legend>   
+          <lable>주소</lable>
+          <input type="text" size="50"><br>
+          <lable>전화번호</lable>
+           <input type="number" size="25"><br>
+          <lable>메 모</lable>
+          <textarea></textarea>
+         </fieldset>
+         <fieldset>
+           <legend style="color:indigo;">주문 정보</legend>
+           <lable>과테말라 안티구아(100g 5000원)</lable> <input type="number" name="num1" value="0"><br>
+           <lable>인도네시아 만델링(100g 5500원)</lable><input name="num2" type="range" min="1" max="10"  value="0"><br>
+           <lable>탐라는도다(블렌딩)(100g, 6000원)</lable>
+              <select id="숫자" name="num3" value="0">
+              <option>1</option>
+	<option>3</option>
+              </select><br>
+               =<output name="result" for="num">s</output>
+          </form>
+</body>
+</html>
