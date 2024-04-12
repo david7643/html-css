@@ -1,0 +1,41 @@
+<html>
+<head>
+<style>
+	.greentext{
+			color:green;
+			}
+	.indigotext{
+			color:indigo;
+			}
+*{
+margin:5;
+}
+#a{ padding-right:26px;}
+#b{ padding-right:10px;}
+#c{ padding-right:42px;}
+#d{ padding-right:10px;}
+#e{ padding-right:37px;}
+</style>
+</head>
+<body>
+      <h1>상품 주문서</h1>
+      <form oninput="result.value=parseInt(num1.value)*5000+parseInt(num2.value)*5500+parseInt(num3.value)*6000">
+          <fieldset>
+          <legend class="indigotext">개인 정보</legend>
+          <lable class="greentext"  id="a">이름</lable>
+          <input type="text" placeholder="여백없이 입력"><br>
+          <lable class="greentext"  id="b">연락처</lable>
+           <input type="number" placeholder="연락가능한 번호">
+          </fieldset>
+          <fieldset>
+           <legend class="indigotext">배송지 정보</legend>   
+          <lable class="greentext"  id="c">주소</lable>
+          <input type="text" size="50"><br>
+          <lable class="greentext"  id="d">전화번호</lable>
+           <input type="number" size="25"><br>
+          <lable class="greentext"  id="e">메 모</lable>
+          <textarea></textarea>
+         </fieldset>
+</form>
+</body>
+</html>
