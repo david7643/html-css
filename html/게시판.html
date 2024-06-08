@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <style>
+            *{margin:0; padding:0; box-sizing:border-box;}
+            .background{background-image:url('index사진/wall.jpg')}
+            .inner{width:1500px; height:1600px; margin:auto; background-color: rgb(146, 165, 115); border:2px solid black;
+            border-radius:20px; box-shadow:2px 2px 15px 2px black; position:relative;}
+            .header{height:200px; border:2px solid black; border-radius:20px;}
+            .article{width:720px; margin:10px;}
+            .img{width:300px;}
+            .margin{width:300px;}
+            nav div{ border:2px solid black; width:300px; height:400; margin:70px; font-size:35px; box-shadow:5px 5px 15px black; border-radius:20px;}
+            ul li a{color:white; font-size: 15px;}
+            div ul li{display:inline; padding:20px; background-color:indigo; width:1500px;}
+            .box1{position:absolute; top:230px; left:10px;}
+            .box2{background-color:antiquewhite; 
+                border:2px solid black; 
+                box-shadow: 0px 0px 10px 0px #00000020;
+                border-radius:20px; text-align:center;}
+        </style>
+    </head>
+    <body class="background">
+        <div class="inner">
+        <header class="header">
+            <div style="text-align:center; padding-top:80px;">
+                <h1 style="font-size:50px">게시판 글 작성</h1>
+            </div>
+        </header>
+        <section>
+            <h1>게시판 글쓰기</h1>
+            <form class="box2">
+                <label for="title">제목</label><br>
+                <input type="text" id="title" name="title" style="width:500px" placeholder="제목입력"><br>
+                <label for="content">내용</label><br>
+                <textarea id="content" name="content" cols="150" rows="50" placeholder="음란물, 차별, 비하, 혐오 및 초상권, 저작권 침해 게시물은 민, 형사상의 책임을 질 수 있습니다."></textarea><br>
+                <input type="submit" value="제출">
+            </form>
+        </section>
+        <aside>
+        </aside>
+        </div>
+    </body>
+</html>
