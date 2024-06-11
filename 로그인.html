@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <style>
+            *{margin:0; padding:0; box-sizing:border-box;}
+            .background{background-image:url('index사진/wall.jpg')}
+            .inner{width:1500px; height:1600px; margin:auto; background-color: rgb(146, 165, 115); border:2px solid black;
+            border-radius:20px; box-shadow:2px 2px 15px 2px black; position:relative;}
+            .header{height:200px; border:2px solid black; border-radius:20px;}
+            .article{width:720px; margin:10px;}
+            .img{width:300px;}
+            .margin{width:300px;}
+            nav div{ border:2px solid black; width:300px; height:400; margin:70px; font-size:35px; box-shadow:5px 5px 15px black; border-radius:20px;}
+            ul li a{color:white; font-size: 15px;}
+            div ul li{display:inline; padding:20px; background-color:indigo; width:1500px;}
+            .box1{position:absolute; top:230px; left:10px;}
+            .box2{background-color:antiquewhite; 
+                border:1px solid black; 
+                box-shadow: 0px 0px 10px 0px #00000020;
+                border-radius:20px;
+                width:300px; height:150px; padding-left:50px;}
+        </style>
+    </head>
+    <body class="background">
+        <div class="inner">
+        <header class="header">
+            <div style="text-align:center; padding-top:80px;">
+                <h1 style="font-size:50px">로그인</h1>
+            </div>
+        </header>
+        <section>
+                <form class="box2" style="position:absolute; top:500px; left:600px;">
+                    <label for="username">아이디:</label><br>
+                    <input type="text" id="username" name="username"><br>
+                    <label for="password">비밀번호:</label><br>
+                    <input type="password" id="password" name="password"><br><br>
+                    <input type="submit" value="로그인">
+                </form>
+        </section>
+        <aside>
+        </aside>
+        </div>
+    </body>
+</html>
